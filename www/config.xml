@@ -25,19 +25,19 @@
 
 
     <!-- Personalize como seu aplicativo irá operar nas plataformas. -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="orientation"                value="default" />        <!-- todos: Orientação que o app trabalhará. 'default' é tanto orizontal quanto vertical. -->
+    <preference name="target-device"              value="universal" />      <!-- todos: Roda em várias plataformas(telefones, tablets, etc..) -->
+    <preference name="fullscreen"                 value="false" />          <!-- todos: oculta a barra de status na parte superior da tela -->
+    <preference name="webviewbounce"              value="true" />           <!-- ios: se ícone é pré prestados, iOS não vai aplicá-la é brilho para o ícone do aplicativo na tela inicial do usuário -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
-    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
-    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
-    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
-    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: preto translúcido aparece preto porque o webview PhoneGap não ir abaixo da barra de status -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controla se os tipos de dados (como o número de telefone e datas) são transformados automaticamente em ligações pelo sistema -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: Se definido como true, o app irá terminar quando o botão HOME é pressionado. -->
+    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: Se definido como false, o spinner não aparece na tela de abertura durante o carregamento app. -->
+    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: Se definido como false, a tela inicial deve ser escondido usando uma API JavaScript. -->
+    <preference name="disable-cursor"             value="false" />          <!-- blackberry: Impede que o cursor do mouse seja exibido no aplicativo -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: Local onde o app será instalado. 'auto' será escolhido automaticamente. 'internalOnly' será na memória interna. 'preferExternal' será no Cartão SD. -->
     <!--
         Defina uma versão específica do PhoneGap para construir em seu aplicativo.
         <preference name="phonegap-version"       value="3.5.0" />
