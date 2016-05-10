@@ -9,21 +9,22 @@
     <name>Hello World</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Hello World é uma aplicação de exemplo.
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        PhoneGap Team
+    <author href="http://www.tiago.art.br" email="tiago@tiago.art.br">
+        Time PhoneGap Brasil
     </author>
 
     <!--
-        If you do not want any permissions to be added to your app, add the
-        following tag to your config.xml; you will still have the INTERNET
-        permission on your app, which PhoneGap requires.
+        Se você não quer que nenhuma permissão para ser adicionado ao seu aplicativo, adicione o
+        seguinte tag no seu config.xml; você ainda terá a INTERNET
+        permissão em sua aplicação, que exige PhoneGap.
     -->
     <preference name="permissions"                value="none"/>
 
-    <!-- Customize your app and platform with the preference element. -->
+
+    <!-- Personalize como seu aplicativo irá operar nas plataformas. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -38,13 +39,13 @@
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--
-        Define a specific version of PhoneGap to build into your app.
+        Defina uma versão específica do PhoneGap para construir em seu aplicativo.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
 
     <!-- Plugins -->
 
-    <!-- Core plugins -->
+    <!-- Principais plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -64,13 +65,13 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
 
-    <!-- Third party plugins -->
-    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <!-- Plugins de Terceiros -->
+    <!-- Veja quais plugins estão disponíveis em https://build.phonegap.com/plugins -->
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 
-    <!-- Define app icon for each platform. -->
+    <!-- Defina o ícone do aplicativo para cada plataforma. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
@@ -86,7 +87,7 @@
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
-    <!-- Define app splash screen for each platform. -->
+    <!-- Defina a Tela Inicial em cada plataforma. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
@@ -104,21 +105,21 @@
     </gap:config-file>
 
     <!--
-        Define access to external domains.
+        Defina o acesso a domínios externos.
 
-        <access />            - a blank access tag denies access to all external resources.
-        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+        <access />            - Em Branco nega acesso a todos os recursos externos.
+        <access origin="*" /> - Um Asterístico permite o acesso a todos os recursos externos.
 
-        Otherwise, you can specify specific domains:
+      Você também pode especificar quais domínios deseja liberar:
 
-        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
-        <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
-        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+        <access origin="http://phonegap.com" />                    - permitir para http://phonegap.com/
+        <access origin="http://phonegap.com" subdomains="true" />  - mesmo que acima, incluindo subdomínio como: http://build.phonegap.com/
+        <access origin="http://phonegap.com" browserOnly="true" /> - só permite http://phonegap.com ser aberto no navegador.
     -->
 
     <access origin="*"/>
-    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
-    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+    <!-- Acrescente as seguintes intenções para apoiar a remoção de código whitelist do Cordova base para um plugin -->
+    <!-- Para saber mais da configuração do Whitelist: https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
