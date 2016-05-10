@@ -1,4 +1,4 @@
-# Aplicação Hello World do PhoneGap [![bitHound Score][bithound-img]][bithound-url]
+# Aplicação Hello World do PhoneGap 
 
 > Essa é a aplicação Hello World do Phonegap
 
